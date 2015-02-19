@@ -1,26 +1,19 @@
 # BBDN-Web-Service-Python-Sample-Code
 This project contains sample code for interacting with the Blackboard Learn SOAP Web Services in Python. This sample code was built with Python 2.7.9.
 
-##Project at a glance:
+###Project at a glance:
 - Target: Blackboard Learn 9.1 SP 11 minimum
 - Source Release: v1.0
 - Release Date  2015-02-19
 - Author: shurrey
 - Tested on Blackboard Learn 9.1 April 2014 release
 
-##Requirements:
+###Requirements:
 - Python  2.7.9
 - SUDS: https://bitbucket.org/jurko/suds
 
-To learn more about Blackboard Learn web services see ...
-Description:
-
-
-##Getting Started
-This section will describe how to build and use this sample code.
-
 ### Setting Up Your Development Environment
-You will first need to install Python 2.7.9. You can use tools like brew or ports to install, or runt he installation manually.
+You will first need to install Python 2.7.9. You can use tools like brew or ports to install, or run the installation manually.
 
 In addition, you will need to install SUDS. I am using a branch of SUDS that is maintained (the original SUDS project has gone stagnant).
 
@@ -35,7 +28,6 @@ Addionally, you can also install the library with pip:<br />
 ### Configuring the Script
 Also, this script is currently configured to use the Learn Developer Virtual Machine. You may use this with other systems, it will just require you to modify the following section in the main application loop. The only thing you should have to change is the server variable:
 
-    # Set up the base URL for Web Service endpoints
     protocol = 'https'
     server = 'localhost:9877'
     service_path = 'webapps/ws/services'
