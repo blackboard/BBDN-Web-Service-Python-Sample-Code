@@ -315,7 +315,7 @@ if __name__ == '__main__':
     
     # Initialize headers and then call createHeaders to generate the soap headers with WSSE bits.
     headers = []
-    headers = createHeaders('initialize', "session", "nosession")
+    headers = createHeaders('initialize', "session", "nosession", 'Context.WS')
     
     # Add Headers and WS-Security to client. Set port to default value, otherwise, you must add to service call
     contextWS.set_options(soapheaders=headers, port='Context.WSSOAP12port_https')
@@ -327,7 +327,7 @@ if __name__ == '__main__':
     
     # Initialize headers and then call createHeaders to generate the soap headers with WSSE bits.
     headers = []
-    headers = createHeaders('login', 'session', sessionId)
+    headers = createHeaders('login', 'session', sessionId, 'Context.WS')
     
     # Add Headers and WS-Security to client. Set port to default value, otherwise, you must add to service call
     contextWS.set_options(soapheaders=headers, port='Context.WSSOAP12port_https')
@@ -339,7 +339,7 @@ if __name__ == '__main__':
     
     # Initialize headers and then call createHeaders to generate the soap headers with WSSE bits.
     headers = []
-    headers = createHeaders('getMyMemberships', 'session', sessionId)
+    headers = createHeaders('getMyMemberships', 'session', sessionId, 'Context.WS')
     
     # Add Headers and WS-Security to client. Set port to default value, otherwise, you must add to service call
     contextWS.set_options(soapheaders=headers, port='Context.WSSOAP12port_https')
@@ -351,7 +351,7 @@ if __name__ == '__main__':
     
     # Initialize headers and then call createHeaders to generate the soap headers with WSSE bits.
     headers = []
-    headers = createHeaders('initializeAnnouncementWS', 'session', sessionId)
+    headers = createHeaders('initializeAnnouncementWS', 'session', sessionId, 'Announcement.WS')
     
     # Add Headers and WS-Security to client. Set port to default value, otherwise, you must add to service call
     announcementWS.set_options(soapheaders=headers, port='Announcement.WSSOAP12port_https')
@@ -363,7 +363,7 @@ if __name__ == '__main__':
     
     # Initialize headers and then call createHeaders to generate the soap headers with WSSE bits.
     headers = []
-    headers = createHeaders('getCourseAnnouncements', 'session', sessionId)
+    headers = createHeaders('getCourseAnnouncements', 'session', sessionId, 'Announcement.WS')
     
     # Add Headers and WS-Security to client. Set port to default value, otherwise, you must add to service call
     announcementWS.set_options(soapheaders=headers, port='Announcement.WSSOAP12port_https')
@@ -396,7 +396,7 @@ if __name__ == '__main__':
         
     # Initialize headers and then call createHeaders to generate the soap headers with WSSE bits.
     headers = []
-    headers = createHeaders('logout', 'session', sessionId)
+    headers = createHeaders('logout', 'session', sessionId, 'Context.WS')
     
     # Add Headers and WS-Security to client. Set port to default value, otherwise, you must add to service call
     contextWS.set_options(soapheaders=headers, port='Context.WSSOAP12port_https')
