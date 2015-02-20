@@ -146,7 +146,7 @@ def generate_nonce(length=8):
     """Generate pseudorandom number."""
     return ''.join([str(random.randint(0, 9)) for i in range(length)])
 
-def createHeaders(action, endpoint, username, password):
+def createHeaders(action, username, password, endpoint):
     """Create the soap headers section of the XML to send to Blackboard Learn Web Service Endpoints"""
     
     # Namespaces
