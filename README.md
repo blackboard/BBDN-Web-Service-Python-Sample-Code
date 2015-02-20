@@ -103,4 +103,4 @@ Just be sure to replace my absolute path to the absolute path on your file syste
 - If you follow workaround 2, the code should work as-is.
 
 ### Conclusion
-For a thorough walkthrough of this code, visit the corresponding Blackboard Help page < href="http://help.blackboard.com/en-us/Learn/9.1_2014_04/Administrator/080_Developer_Resources/020_Develop/020_Web_Services/010_Examples/Get_Course_Announcements_With_Python" target="_blank">here</a>.
+For a thorough walkthrough of this code, visit the corresponding Blackboard Help page <a href="http://help.blackboard.com/en-us/Learn/9.1_2014_04/Administrator/080_Developer_Resources/020_Develop/020_Web_Services/010_Examples/Get_Course_Announcements_With_Python" target="_blank">here</a>.
